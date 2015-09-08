@@ -1,0 +1,15 @@
+<manifest>
+  <define>
+    <domain name="wrt-commons"/>
+    <provide>   
+        <label name="wrt-commons::db_wrt"/>
+    </provide>
+  </define>
+  <request>
+    <domain name="_"/>
+  </request>
+  <assign>
+    <filesystem path="/usr/bin/wrt_commons_create_clean_db.sh" label="_" exec_label="none"/>
+    <filesystem path="/usr/bin/wrt_commons_reset_db.sh" label="_" exec_label="none"/>
+  </assign>
+</manifest>
